@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300&family=Rubik&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.nav{
+    height: 145px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 40px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 10;
+}
+
+/* .nav img{
+    height: 80px;
+} */
+
+.nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    /* color: black; */
+}
+
+.login{
+    margin-left: 230px;
+    display: flex;
+}
+.login button{
+    margin: 15px;
+    /* color: black; */
+    border: 1px rgb(223, 220, 220) solid;
+    border-radius: 30px;
+    outline: 0;
+    font-weight: 500;
+    background-color: transparent;
+    /* font-size: 17px; */
+    padding: 5px 20px;
+}
+.login button:active{
+    background-color: rgb(223, 220, 220);
+    color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    z-index: 10;
+}
+.page1 h1{
+    font-size: 90px;
+    font-weight: 800;
+    position: relative;
+}
+.page1 h1::before{
+    content: "WELCOME TO FINGRAD";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px rgb(50, 50, 222);
+    z-index: -1;
+}
+.page1 h2{
+    font-size: 29px;
+    font-weight: 600;
+    opacity: 2;
+    margin-top: 10px;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(52, 52, 180);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+.cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(52, 52, 180, 0.2);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+}
+.page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+.about{
+    height: 40vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.about h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.about p{
+    margin-bottom: 10px;
+}
+
+.cards-container{
+    /* background-color: red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    position: relative;
+}
+
+.card{
+    height: 70%;
+    width: 20%;
+    /* background-color: rgb(52, 52, 180); */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#card1{
+    background-image: url("adeolu-eletu-E7RLgUjjazc-unsplash.jpg");
+}
+#card2{
+    background-image: url("blog_finance.jpg");
+}
+#card3{
+    background-image: url('forum.webp');
+    background-position: right;
+}
+#card4{
+    background-image: url('pft.avif');
+}
+.card h2{
+    margin-top: 80%;
+    margin-left: 20%;
+}

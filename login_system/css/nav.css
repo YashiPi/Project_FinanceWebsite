@@ -1,0 +1,12 @@
+.nav{
+    height: 145px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px;
+    gap: 40px;
+    justify-content: flex-start;
+    position: fixed;
+    
+}
